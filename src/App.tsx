@@ -28,6 +28,10 @@ import {
   Award
 } from "lucide-react";
 
+import haifengTrainInterior from "./assets/images/haifeng_train_interior_1779791421103.png";
+import haifengDessertBox from "./assets/images/haifeng_dessert_box_1779791438191.png";
+import haifengTrainExterior from "./assets/images/haifeng_train_exterior_1779791402127.png";
+
 export default function App() {
   const [activeTab, setActiveTab] = useState("all");
   const [isPlaying, setIsPlaying] = useState(false);
@@ -551,10 +555,10 @@ export default function App() {
                   <img 
                     src={
                       selectedScenario === "dating" 
-                        ? "/src/assets/images/haifeng_train_interior_1779791421103.png" // interior for romantic dating vibe
+                        ? haifengTrainInterior // interior for romantic dating vibe
                         : selectedScenario === "birthday"
-                          ? "/src/assets/images/haifeng_dessert_box_1779791438191.png" // exquisite dessert box for celebration
-                          : "/src/assets/images/haifeng_train_exterior_1779791402127.png" // gorgeous scenic train for閨蜜bff travel
+                          ? haifengDessertBox // exquisite dessert box for celebration
+                          : haifengTrainExterior // gorgeous scenic train for閨蜜bff travel
                     } 
                     alt="海風號美學視覺" 
                     className="object-cover w-full h-full opacity-90 transition-all duration-700 hover:scale-105"
@@ -694,7 +698,7 @@ export default function App() {
               <div className="space-y-4">
                 <div className="rounded-3xl overflow-hidden shadow-md transform hover:-rotate-1 transition-all duration-300 bg-brand-deepteal border border-brand-gold/15">
                   <img 
-                    src="/src/assets/images/haifeng_train_exterior_1779791402127.png" 
+                    src={haifengTrainExterior} 
                     alt="海風號經典列車" 
                     className="w-full object-cover aspect-[4/5] hover:scale-105 transition-transform duration-500" 
                   />
@@ -712,7 +716,7 @@ export default function App() {
                 </div>
                 <div className="rounded-3xl overflow-hidden shadow-md transform hover:rotate-1 transition-all duration-300 bg-brand-deepteal border border-brand-gold/15">
                   <img 
-                    src="/src/assets/images/haifeng_train_interior_1779791421103.png" 
+                    src={haifengTrainInterior} 
                     alt="古典車廂雅座" 
                     className="w-full object-cover aspect-[4/5] hover:scale-105 transition-transform duration-500" 
                   />
