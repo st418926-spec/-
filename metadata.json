@@ -1,0 +1,6 @@
+{
+  "name": "海風號甜點觀光列車",
+  "description": "重建響應式「搭上海風號」慢享海景、精緻甜點、好時光的高質感互動網頁體驗",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
